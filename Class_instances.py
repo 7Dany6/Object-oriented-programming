@@ -1,7 +1,7 @@
 """
 Here are bright examples of class instances
 """
-
+#TASK1
 """
 Write the class Movie and define the class constructor with such parameters as the title, director, and the year of release.
 
@@ -14,12 +14,12 @@ class Movie:
         self.director = director
         self.year = year
 
-
-
+#Creating a couple of instances as an example
 titanic = Movie("Titanic", "James Cameron", 1997)
 star_wars = Movie("Star Wars", "George Lucas", 1977)
 fight_club = Movie("Fight Club", "David Fincher", 1999)
 
+#TASK2
 """
 Below is the class Dog with the __init__ method. Imagine, you have a dog named Pumpkin (with a capital P!). 
 Create an instance of the class Dog representing Pumpkin. The name of the variable should be pumpkin_dog.
@@ -30,6 +30,7 @@ class Dog:
         self.name = name
 pumpkin_dog = Dog('Pumpkin')
 
+#TASK3
 """
 John works at the university. He deals with the information about a lot of students and he decided to create a program that would help him with it.
 
@@ -77,6 +78,7 @@ class Student:
 student = Student(input(), input(), int(input()))
 print(student.student_id)
 
+#TASK4
 """
 A right triangle is a triangle in which one angle is a right angle (90-degree angle). The side opposite to the right angle is called a hypotenuse and the other two sides are called legs (or catheti).
 
