@@ -103,7 +103,6 @@ class RightTriangle:
     def area(leg_1, leg_2):
         return 0.5 * leg_1 * leg_2
 
-
 # triangle from the input
 input_c, input_a, input_b = [int(x) for x in input().split()]
 if input_a ** 2 + input_b ** 2 == input_c ** 2:
