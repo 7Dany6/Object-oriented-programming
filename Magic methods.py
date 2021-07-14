@@ -33,3 +33,32 @@ You want your program to work in a way that at any given time there can be no mo
 Define __new__ method so that this restriction is placed on the class.
 """
 #SOLUTION
+class Puppy:
+    n_puppies = 0  # number of created puppies
+
+    def __new__(cls):
+        if cls.n_puppies < 10:
+            cls.n_puppies += 1
+        return object.__new__(cls)
+"""
+At first glance, it seems insane but the main property of such method is to control the overall number of class instances. Jusk keep it in mind.
+"""
+
+#TASK3
+"""
+The class Patient needs both an unambiguous representation for developers and a readable string for users. Here's how they are supposed to look:
+For developers: Object of the class Patient. name: {name}, last_name: {last_name}, age: {age}
+For users: {name} {last_name}. {age}
+"""
+#SOLUTION
+class Patient:
+    def __init__(self, name, last_name, age):
+        self.name = name
+        self.last_name = last_name
+        self.age = age
+
+    def __repr__(self):
+        return f'Object of the class Patient. name: {self.name}, last_name: {self.last_name}, age: {self.age}'
+
+    def __str__(self):
+        return f'{self.name} {self.last_name}. {self.age}'
