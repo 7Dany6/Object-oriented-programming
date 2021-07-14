@@ -1,5 +1,5 @@
 """
-Here are the main points of class instances
+Here are bright examples of class instances
 """
 
 """
@@ -19,3 +19,7 @@ class Movie:
 titanic = Movie("Titanic", "James Cameron", 1997)
 star_wars = Movie("Star Wars", "George Lucas", 1977)
 fight_club = Movie("Fight Club", "David Fincher", 1999)
+
+"""
+
+"""
