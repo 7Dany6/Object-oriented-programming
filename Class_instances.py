@@ -98,8 +98,8 @@ class RightTriangle:
         self.b = leg_2
 
     @staticmethod
-    def area(a, b):
-        return 0.5 * a * b
+    def area(leg_1, leg_2):
+        return 0.5 * leg_1 * leg_2
 
 
 # triangle from the input
